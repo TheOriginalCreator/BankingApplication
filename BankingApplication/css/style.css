@@ -1,0 +1,76 @@
+.container {
+    padding: 15px;
+    margin-top: 20px;
+    border: 0.5px double black;
+    background-color: bisque;
+    animation: backgroundAnimation 15s infinite;
+}
+
+@keyframes backgroundAnimation {
+    25% {
+        background-color: burlywood;
+    }
+    50% {
+        background-color: bisque;
+    }
+    75% {
+        background-color: burlywood;
+    }
+    100% {
+        background-color: bisque;
+    }
+}
+
+body {
+    background: rgba(255, 123, 0, 0.445) !important;
+}
+
+#logoHead {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: imgAnimation 15s infinite;
+}
+
+@keyframes imgAnimation {
+    25% {
+        transform: rotateY(160deg)
+    }
+    50% {
+        transform: translate(0px, 10px)
+    }
+    100% {
+        transform: translate(0px, 0px)
+    }
+}
+
+#titleText {
+    text-align: center;
+    color: black;
+}
+
+#userBlock {
+    display: none;
+    text-align: center;
+    color: black !important;
+}
+
+#transfer {
+    display: none;
+    text-align: center;
+    color: black !important;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+#error{
+    display: none;
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        max-width: 550px;
+    }
+}
